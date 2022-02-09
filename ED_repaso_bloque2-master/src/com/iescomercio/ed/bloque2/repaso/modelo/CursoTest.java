@@ -12,12 +12,25 @@ class CursoTest {
 
 	@Test
 	void testEliminarAlumno() {
-		Persona p1 = new Persona("123AB","Marcos","Guerreros");
-		Persona p2 = new Persona("246BC", "Carlos", "Adan");
+		Persona p1 = new Persona("11111111A","Marcos","Guerreros");
+		Persona p2 = new Persona("11111111B", "Carlos", "Adan");
 		Curso c = new Curso();
+		int antes;
+		int despues;
 				
 		c.aniadirAlumno(p1);
 		c.aniadirAlumno(p2);
+		antes=c.numeroAlumnos();
+		
+		try {
+			c.eliminarAlumno("11111111B");
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		despues=c.numeroAlumnos();
+		
+		assertEquals(antes-1, despues);
 
 		Exception e = assertThrows(Exception.class, ()->c.eliminarAlumno("123F"));
 		assertEquals(e.getMessage(), "El dni no tiene la longitud adecuada");
@@ -27,8 +40,8 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
-		Persona p1 = new Persona("123AB","Marcos","Guerreros");
-		Persona p2 = new Persona("246BC", "Carlos", "Adan");
+		Persona p1 = new Persona("11111111A","Marcos","Guerreros");
+		Persona p2 = new Persona("11111111B", "Carlos", "Adan");
 		int antes,despues;
 		Curso c = new Curso();
 				
@@ -44,7 +57,13 @@ class CursoTest {
 
 	@Test
 	void testEstaRegistrado() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona("11111111A","Marcos","Guerreros");
+
+		Curso c = new Curso();
+		c.aniadirAlumno(p1);
+	
+		assertTrue(c.estaRegistrado("11111111A"));
+		assertFalse(c.estaRegistrado("1234CD"));
 	}
 
 	@Test
