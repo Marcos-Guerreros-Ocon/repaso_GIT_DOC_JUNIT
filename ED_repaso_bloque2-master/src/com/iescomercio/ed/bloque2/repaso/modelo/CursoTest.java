@@ -27,6 +27,18 @@ class CursoTest {
 
 	@Test
 	void testAniadirAlumno() {
+		Persona p1 = new Persona("123AB","Marcos","Guerreros");
+		Persona p2 = new Persona("246BC", "Carlos", "Adan");
+		int antes,despues;
+		Curso c = new Curso();
+				
+		c.aniadirAlumno(p1);
+		antes = c.numeroAlumnos();
+		
+		c.aniadirAlumno(p2);
+		despues = c.numeroAlumnos();
+		
+		assertEquals(antes+1, despues);
 	
 	}
 
