@@ -69,7 +69,14 @@ class CursoTest {
 
 	@Test
 	void testCurso() {
+		ArrayList<Persona> lista = new ArrayList<>();
+		Curso c = new Curso();
+		Persona p1 = new Persona("11111111A","Marcos","Guerreros");
 		
+		lista.add(p1);
+		c.aniadirAlumno(p1);
+		
+		assertEquals(lista.size(), c.numeroAlumnos());
 	}
 
 	@Test
