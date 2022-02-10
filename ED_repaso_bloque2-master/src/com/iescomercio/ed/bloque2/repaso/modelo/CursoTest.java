@@ -1,5 +1,6 @@
 package com.iescomercio.ed.bloque2.repaso.modelo;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -68,17 +69,21 @@ class CursoTest {
 
 	@Test
 	void testCurso() {
-		fail("Not yet implemented");
+		
 	}
 
 	@Test
 	void testNumeroAlumnos() {
-		fail("Not yet implemented");
+		Persona p1 = new Persona("11111111A","Marcos","Guerreros");
+		int cantidad;
+		Curso c = new Curso();
+				
+		c.aniadirAlumno(p1);
+		cantidad = c.numeroAlumnos();
+		
+		assertEquals(1, cantidad);
+
 	}
 
-	@Test
-	void testMostrarTodos() {
-		fail("Not yet implemented");
-	}
 
 }
