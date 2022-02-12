@@ -19,7 +19,10 @@ class PersonaTest {
 	}
 
 	@Test
-	void testSetDni() {
+	void testGetApellido1() {
+		Persona p = new Persona("123456789A", "Marcos", "Guerreros");
+
+		assertEquals("Guerreros", p.getApellido1());
 	}
 
 	@Test
@@ -30,15 +33,18 @@ class PersonaTest {
 	}
 
 	@Test
-	void testSetNombre() {
-		fail("Not yet implemented");
+	void testSetDni() {
 	}
 
 	@Test
-	void testGetApellido1() {
-		Persona p = new Persona("123456789A", "Marcos", "Guerreros");
+	void testSetNombre() {
+		Persona p = new Persona();
 
-		assertEquals("Guerreros", p.getApellido1());
+		p.setNombre("Marcos");
+		String expected = "Marcos";
+		String actual = p.getNombre();
+
+		assertEquals(expected, actual);
 	}
 
 	@Test
