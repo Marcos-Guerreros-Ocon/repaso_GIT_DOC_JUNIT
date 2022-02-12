@@ -64,7 +64,7 @@ public class Persona {
 	}
 
 	/*
-	 * Documentar y crear test unitario
+	 * Devuelve el apellido del objeto
 	 */
 	public String getApellido1() {
 		return apellido1;
