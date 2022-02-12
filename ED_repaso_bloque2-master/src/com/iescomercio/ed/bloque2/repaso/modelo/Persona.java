@@ -24,7 +24,7 @@ public class Persona {
 
 	/*
 	 * 
-	 * 
+	 * Devuelve el DNI del objeto
 	 * 
 	 */
 	public String getDni() {
