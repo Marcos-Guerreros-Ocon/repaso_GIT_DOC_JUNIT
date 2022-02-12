@@ -30,7 +30,7 @@ public class Curso {
 	}
 	
 	/*
-	 * Documentar y crear test unitario
+	 * Devuelve true si el alumno esta en el curso y false en caso contrario
 	 * */
 	public Boolean estaRegistrado(String dni) {
 		int i =0;
