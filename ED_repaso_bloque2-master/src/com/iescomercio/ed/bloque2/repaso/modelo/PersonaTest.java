@@ -11,12 +11,10 @@ class PersonaTest {
 		fail("Not yet implemented");
 	}
 
-
 	@Test
 	void testGetDni() {
-		Persona p = new Persona("123456789A","Marcos","Guerreros");
+		Persona p = new Persona("123456789A", "Marcos", "Guerreros");
 		assertEquals("123456789A", p.getDni());
-		
 
 	}
 
@@ -26,8 +24,8 @@ class PersonaTest {
 
 	@Test
 	void testGetNombre() {
-		Persona p = new Persona("123456789A","Marcos","Guerreros");
-		
+		Persona p = new Persona("123456789A", "Marcos", "Guerreros");
+
 		assertEquals("Marcos", p.getNombre());
 	}
 
@@ -38,16 +36,14 @@ class PersonaTest {
 
 	@Test
 	void testGetApellido1() {
-		fail("Not yet implemented");
+		Persona p = new Persona("123456789A", "Marcos", "Guerreros");
+
+		assertEquals("Guerreros", p.getApellido1());
 	}
 
 	@Test
 	void testSetApellido1() {
 		fail("Not yet implemented");
 	}
-
-
-
-
 
 }
