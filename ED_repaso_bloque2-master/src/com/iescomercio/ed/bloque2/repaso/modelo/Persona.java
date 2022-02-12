@@ -32,7 +32,8 @@ public class Persona {
 	}
 
 	/*
-	 * Añade un valor al campo DNI Comprueba si el ultimo caracter es una letra, si
+	 * Añade un valor al campo DNI
+	 * Comprueba si el ultimo caracter es una letra, si
 	 * no lo es devuelve una excepcion
 	 * 
 	 * (Updete del codigo => 
@@ -56,7 +57,7 @@ public class Persona {
 	}
 
 	/*
-	 * Documentar y crear test unitario
+	 * Añade un valor al campo nombre
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
