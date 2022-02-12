@@ -52,7 +52,7 @@ public class Curso {
 	}
 	
 	/*
-	 * Documentar y crear test unitario
+	 * Devuelve la cantidad de alumnos que hay en el curso
 	 * */
 	public Integer numeroAlumnos() {return listaAlumnos.size();}
 	
