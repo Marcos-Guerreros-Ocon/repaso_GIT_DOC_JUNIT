@@ -11,10 +11,6 @@ class PersonaTest {
 		fail("Not yet implemented");
 	}
 
-	@Test
-	void testPersonaStringStringString() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	void testGetDni() {
@@ -26,12 +22,13 @@ class PersonaTest {
 
 	@Test
 	void testSetDni() {
-		fail("Not yet implemented");
 	}
 
 	@Test
 	void testGetNombre() {
-		fail("Not yet implemented");
+		Persona p = new Persona("123456789A","Marcos","Guerreros");
+		
+		assertEquals("Marcos", p.getNombre());
 	}
 
 	@Test
