@@ -33,7 +33,19 @@ class PersonaTest {
 	}
 
 	@Test
-	void testSetDni() {
+	void testSetDni(){
+		Persona p = new Persona();
+
+		try {
+			p.setDni("12345678A");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "12345678A";
+		String actual = p.getDni();
+
+		assertEquals(expected, actual);
 	}
 
 	@Test
