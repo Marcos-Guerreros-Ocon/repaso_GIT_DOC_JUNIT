@@ -15,7 +15,7 @@ public class Persona {
 	 * 
 	 * Le pasamos los parametros de entrada que son DNI, nombre y apellido1
 	 * 
-	 * */
+	 */
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
@@ -32,13 +32,12 @@ public class Persona {
 	}
 
 	/*
-	 * Añade un valor al campo DNI
-	 * Comprueba si el ultimo caracter es una letra, si no lo es devuelve una excepcion
+	 * Añade un valor al campo DNI Comprueba si el ultimo caracter es una letra, si
+	 * no lo es devuelve una excepcion
 	 * 
-	 *(Updete del codigo =>
+	 * (Updete del codigo => 
 	 * bug Character.isLetter(dni.charAt(dni.length())
-	 * solucion Character.isLetter(dni.charAt(dni.length() - 1)
-	 * )
+	 * solucion Character.isLetter(dni.charAt(dni.length() - 1) )
 	 */
 	public void setDni(String dni) throws Exception {
 		// comprobacion de si el ultimo caracter es una letra
@@ -50,7 +49,7 @@ public class Persona {
 	}
 
 	/*
-	 * Documentar y crear test unitario
+	 *  Devuelve el nombre del objeto
 	 */
 	public String getNombre() {
 		return nombre;
