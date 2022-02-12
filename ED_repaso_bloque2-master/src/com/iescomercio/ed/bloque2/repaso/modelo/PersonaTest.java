@@ -8,7 +8,19 @@ class PersonaTest {
 
 	@Test
 	void testPersona() {
-		fail("Not yet implemented");
+		Persona p = new Persona("123456789A","Marcos","Guerreros");
+		Persona p1 = new Persona();
+		
+		p1.setNombre("Marcos");
+		p1.setApellido1("Guerreros");
+		try {
+			p1.setDni("123456789A");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		assertEquals(p1, p);
 	}
 
 	@Test
