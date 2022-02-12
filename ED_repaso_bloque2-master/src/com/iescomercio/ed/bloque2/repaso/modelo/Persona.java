@@ -10,35 +10,24 @@ public class Persona {
 	public Persona() {
 	}
 
-	/*
-	 * Constructor de la clase Persona
-	 * 
-	 * Le pasamos los parametros de entrada que son DNI, nombre y apellido1
-	 * 
-	 */
+	
 	public Persona(String dni, String nombre, String apellido1) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
 	}
 
-	/*
-	 * 
-	 * Devuelve el DNI del objeto
-	 * 
+	/**
+	 * Retorna el DNI de la persona
 	 */
 	public String getDni() {
 		return dni;
 	}
 
-	/*
-	 * Añade un valor al campo DNI
-	 * Comprueba si el ultimo caracter es una letra, si
-	 * no lo es devuelve una excepcion
-	 * 
-	 * (Updete del codigo => 
-	 * bug Character.isLetter(dni.charAt(dni.length())
-	 * solucion Character.isLetter(dni.charAt(dni.length() - 1) )
+	/**
+	 * Añade un valor al campo DNI de la persona
+	 * Tambien comprueba si el ultimo valor del DNI es una letra
+	 * Si no lo es devuelve una excepcion
 	 */
 	public void setDni(String dni) throws Exception {
 		// comprobacion de si el ultimo caracter es una letra
@@ -49,29 +38,33 @@ public class Persona {
 		}
 	}
 
-	/*
-	 *  Devuelve el nombre del objeto
+	/**
+	 * Retorna el nombre del alumno
+	 * @return Retorna el nombre del alumno
 	 */
 	public String getNombre() {
 		return nombre;
 	}
 
-	/*
-	 * Añade un valor al campo nombre
+	/**
+	 * Añade un nombre al campo nombre
+	 * @param nombre Nombre del alumno que queramos poner
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	/*
-	 * Devuelve el apellido del objeto
+	/**
+	 * Retorna el apellido de la persona
+	 * @return El apellido de la persona
 	 */
 	public String getApellido1() {
 		return apellido1;
 	}
 
-	/*
-	 *Añade un valor al campo apellido
+	/**
+	 * Añade el apellido al campo apellido
+	 * @param apellido1 Apellido de la persona
 	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
