@@ -71,7 +71,7 @@ public class Persona {
 	}
 
 	/*
-	 * Documentar y crear test unitario
+	 *Añade un valor al campo apellido
 	 */
 	public void setApellido1(String apellido1) {
 		this.apellido1 = apellido1;
