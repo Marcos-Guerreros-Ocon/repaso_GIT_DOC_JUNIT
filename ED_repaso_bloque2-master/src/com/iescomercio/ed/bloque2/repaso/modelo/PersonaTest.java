@@ -46,6 +46,9 @@ class PersonaTest {
 		String actual = p.getDni();
 
 		assertEquals(expected, actual);
+		
+		Exception e = assertThrows(Exception.class, ()->p.setDni("12345"));
+		assertEquals(e.getMessage(), "El ultimo caracter introducido no es una letra");
 	}
 
 	@Test
