@@ -8,7 +8,11 @@ public class Curso {
 	private List<Persona> listaAlumnos;
 
 	/*
-	 * Documentar y crear test unitario
+	 * Elimina un alumno del curso por su numero del DNI
+	 * Para ello primero comprueba que la longitud del DNI es de 9 digitos
+	 * Si no lo es retorna un error
+	 * Si es de 9 digitos elimina el alumno
+	 * 
 	 * */
 	public void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
