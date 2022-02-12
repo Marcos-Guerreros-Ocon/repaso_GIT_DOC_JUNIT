@@ -32,7 +32,13 @@ public class Persona {
 	}
 
 	/*
-	 * Documentar y crear test unitario
+	 * Añade un valor al campo DNI
+	 * Comprueba si el ultimo caracter es una letra, si no lo es devuelve una excepcion
+	 * 
+	 *(Updete del codigo =>
+	 * bug Character.isLetter(dni.charAt(dni.length())
+	 * solucion Character.isLetter(dni.charAt(dni.length() - 1)
+	 * )
 	 */
 	public void setDni(String dni) throws Exception {
 		// comprobacion de si el ultimo caracter es una letra
