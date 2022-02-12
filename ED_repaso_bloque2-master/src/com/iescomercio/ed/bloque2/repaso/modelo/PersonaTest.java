@@ -49,7 +49,13 @@ class PersonaTest {
 
 	@Test
 	void testSetApellido1() {
-		fail("Not yet implemented");
+		Persona p = new Persona();
+
+		p.setApellido1("Guerreros");
+		String expected = "Guerreros";
+		String actual = p.getApellido1();
+
+		assertEquals(expected, actual);
 	}
 
 }
